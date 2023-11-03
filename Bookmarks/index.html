@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark App</title>
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+</head>
+<body>
+    <!-- Open Modal -->
+    <h1 id="show-modal-title">Add Bookmark</h1>
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container">
+        <!-- <div class="item">
+            <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+            <div class="name">
+               <i></i>
+                <a href="" target="_blank">Github Profile</a>
+            </div>
+        </div> -->
+    </div> 
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-times close-icon" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!-- Website Name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" id="website-name" class="form-input">
+                    </div>
+                    <!-- Website URL -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website URL</label>
+                        <input type="text" id="website-url" class="form-input">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Java Script -->
+    <script src="script.js"></script>
+</body>
+</html>
